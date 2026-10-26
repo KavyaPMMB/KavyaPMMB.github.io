@@ -228,6 +228,24 @@ window.addEventListener("resize", () => {
   resizeParticles();
 });
 
+const mailAddress = "kavyapmmb1@gmail.com";
+const mailSubject = "Hello from your portfolio";
+const mailBody = "Hi Kavya,\n\nI visited your portfolio and would like to get in touch.";
+const gmailCompose = "https://mail.google.com/mail/?ui=2&view=cm&fs=1&tf=1&to="
+  + encodeURIComponent(mailAddress)
+  + "&su=" + encodeURIComponent(mailSubject)
+  + "&body=" + encodeURIComponent(mailBody);
+
+document.querySelectorAll("[data-email]").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    if (mobile) return;
+    event.preventDefault();
+    const opened = window.open(gmailCompose, "_blank", "noopener,noreferrer");
+    if (!opened) window.location.href = link.href;
+  });
+});
+
 onScroll();
 layoutLines();
 window.addEventListener("scroll", onScroll, { passive: true });
