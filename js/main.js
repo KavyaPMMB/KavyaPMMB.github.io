@@ -1,4 +1,6 @@
 const header = document.querySelector(".site-header");
+const hero = document.querySelector(".hero");
+const scrollCue = document.querySelector(".scroll-cue");
 const navMenu = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links a");
 const sections = [...document.querySelectorAll("main section[id]")];
@@ -8,6 +10,13 @@ let activeHref = "";
 
 function onScroll() {
   header.classList.toggle("is-scrolled", window.scrollY > 8);
+
+  if (scrollCue && hero) {
+    const room = hero.getBoundingClientRect().bottom - 120;
+    const fade = Math.min(1, Math.max(0, room / 180));
+    scrollCue.style.opacity = String(fade);
+    scrollCue.style.pointerEvents = fade < 0.15 ? "none" : "";
+  }
 
   const marker = window.scrollY + 120;
   let current = null;
