@@ -4,23 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kavya P · Full Stack Developer in Dubai</title>
-  <meta name="description" content="Kavya P is a full stack software engineer in Al Mankhool, Dubai. She builds MERN applications, cloud integrations, CI/CD, and workflow automation.">
+  <meta name="description" content="Portfolio of Kavya P, a full stack developer in Al Mankhool, Dubai. MERN applications, cloud integrations, CI/CD, and workflow automation.">
   <meta name="author" content="Kavya P">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#071018">
+  <link rel="canonical" href="https://kavyapmmb.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Kavya P">
+  <meta property="og:url" content="https://kavyapmmb.github.io/">
   <meta property="og:title" content="Kavya P · Full Stack Developer in Dubai">
-  <meta property="og:description" content="Full stack software engineer in Dubai. MERN applications, cloud integrations, CI/CD, and workflow automation.">
-  <meta property="og:image" content="assets/kavya.jpg">
-  <meta property="og:image:alt" content="Kavya P, full stack developer based in Dubai">
-  <meta property="og:image:width" content="796">
-  <meta property="og:image:height" content="1024">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:description" content="Portfolio of Kavya P, a full stack developer in Dubai. MERN applications, cloud integrations, CI/CD, and workflow automation.">
+  <meta property="og:image" content="https://kavyapmmb.github.io/assets/og.jpg">
+  <meta property="og:image:secure_url" content="https://kavyapmmb.github.io/assets/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Kavya P, full stack developer in Dubai">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Kavya P · Full Stack Developer in Dubai">
-  <meta name="twitter:description" content="Full stack software engineer in Dubai. MERN applications, cloud integrations, CI/CD, and workflow automation.">
-  <meta name="twitter:image" content="assets/kavya.jpg">
-  <meta name="twitter:image:alt" content="Kavya P, full stack developer based in Dubai">
+  <meta name="twitter:description" content="Portfolio of Kavya P, a full stack developer in Dubai. MERN applications, cloud integrations, CI/CD, and workflow automation.">
+  <meta name="twitter:image" content="https://kavyapmmb.github.io/assets/og.jpg">
+  <meta name="twitter:image:alt" content="Kavya P, full stack developer in Dubai">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +42,7 @@
       "name": "Kavya P",
       "jobTitle": "Full Stack Developer",
       "email": "kavyapmmb1@gmail.com",
-      "url": "https://www.linkedin.com/in/kavya-p-442091219",
+      "url": "https://kavyapmmb.github.io/",
       "sameAs": [
         "https://www.linkedin.com/in/kavya-p-442091219",
         "https://github.com/KavyaPMMB"
@@ -103,16 +108,23 @@
       var path = location.pathname.replace(/index\.html$/i, "");
       if (path.slice(-1) !== "/") path += "/";
       var site = location.origin + path;
-      var image = site + "assets/kavya.jpg";
-      var canonical = document.createElement("link");
-      canonical.rel = "canonical";
+      var image = site + "assets/og.jpg";
+      var canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement("link");
+        canonical.rel = "canonical";
+        document.head.appendChild(canonical);
+      }
       canonical.href = site;
-      document.head.appendChild(canonical);
-      var pageUrl = document.createElement("meta");
-      pageUrl.setAttribute("property", "og:url");
+      var pageUrl = document.querySelector('meta[property="og:url"]');
+      if (!pageUrl) {
+        pageUrl = document.createElement("meta");
+        pageUrl.setAttribute("property", "og:url");
+        document.head.appendChild(pageUrl);
+      }
       pageUrl.content = site;
-      document.head.appendChild(pageUrl);
       document.querySelector('meta[property="og:image"]').content = image;
+      document.querySelector('meta[property="og:image:secure_url"]').content = image;
       document.querySelector('meta[name="twitter:image"]').content = image;
       var data = document.getElementById("profile-data");
       if (!data) return;
@@ -130,11 +142,8 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-          <span class="when-closed">Menu</span>
-          <span class="when-open">Close</span>
-        </button>
         <div class="nav-links" id="nav-menu">
+          <a href="#top">Home</a>
           <a href="#about">About</a>
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>

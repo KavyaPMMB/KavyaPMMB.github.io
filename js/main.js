@@ -1,15 +1,10 @@
 const header = document.querySelector(".site-header");
-const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links a");
 const sections = [...document.querySelectorAll("main section[id]")];
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-function setMenu(open) {
-  navMenu.classList.toggle("is-open", open);
-  navToggle.classList.toggle("is-open", open);
-  navToggle.setAttribute("aria-expanded", String(open));
-}
+const phoneNav = window.matchMedia("(max-width: 980px)");
+let activeHref = "";
 
 function onScroll() {
   header.classList.toggle("is-scrolled", window.scrollY > 8);
@@ -19,23 +14,23 @@ function onScroll() {
   for (const section of sections) {
     if (section.offsetTop <= marker) current = section;
   }
+  const href = current ? `#${current.id}` : "#top";
   navLinks.forEach((link) => {
-    link.classList.toggle("is-active", current && link.getAttribute("href") === `#${current.id}`);
+    const active = link.getAttribute("href") === href;
+    link.classList.toggle("is-active", active);
+    if (active) link.setAttribute("aria-current", "true");
+    else link.removeAttribute("aria-current");
   });
+  if (href !== activeHref) {
+    activeHref = href;
+    const active = navMenu.querySelector("a.is-active");
+    if (active && phoneNav.matches) {
+      const left = active.offsetLeft - (navMenu.clientWidth - active.offsetWidth) / 2;
+      navMenu.scrollTo({ left: Math.max(0, left), behavior: reduceMotion ? "auto" : "smooth" });
+    }
+  }
   drawScenes.forEach((scene) => scene.update());
 }
-
-navToggle.addEventListener("click", () => {
-  setMenu(!navMenu.classList.contains("is-open"));
-});
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => setMenu(false));
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") setMenu(false);
-});
 
 const svgNs = "http://www.w3.org/2000/svg";
 
