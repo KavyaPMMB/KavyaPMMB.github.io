@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kavya P · Full Stack Developer in Dubai</title>
+  <meta name="description" content="Kavya P is a full stack software engineer in Al Mankhool, Dubai. She builds MERN applications, cloud integrations, CI/CD, and workflow automation.">
+  <meta name="author" content="Kavya P">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#071018">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Kavya P · Full Stack Developer in Dubai">
+  <meta property="og:description" content="Full stack software engineer in Dubai. MERN applications, cloud integrations, CI/CD, and workflow automation.">
+  <meta property="og:image" content="assets/kavya.jpg">
+  <meta property="og:image:alt" content="Kavya P, full stack developer based in Dubai">
+  <meta property="og:image:width" content="796">
+  <meta property="og:image:height" content="1024">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kavya P · Full Stack Developer in Dubai">
+  <meta name="twitter:description" content="Full stack software engineer in Dubai. MERN applications, cloud integrations, CI/CD, and workflow automation.">
+  <meta name="twitter:image" content="assets/kavya.jpg">
+  <meta name="twitter:image:alt" content="Kavya P, full stack developer based in Dubai">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json" id="profile-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "Kavya P · Full Stack Developer in Dubai",
+    "description": "Portfolio of Kavya P, a full stack software engineer in Al Mankhool, Dubai.",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Kavya P",
+      "jobTitle": "Full Stack Developer",
+      "email": "kavyapmmb1@gmail.com",
+      "url": "https://www.linkedin.com/in/kavya-p-442091219",
+      "sameAs": [
+        "https://www.linkedin.com/in/kavya-p-442091219",
+        "https://github.com/KavyaPMMB"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Al Mankhool",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "SkyNetClouds Co., Ltd."
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Kannur University"
+      },
+      "knowsAbout": [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "MySQL",
+        "AWS",
+        "Oracle Cloud",
+        "CI/CD",
+        "n8n",
+        "Cursor",
+        "Claude",
+        "GitHub Copilot",
+        "ChatGPT",
+        "Gemini"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Oracle Cloud Infrastructure 2025 Certified Observability Professional",
+          "credentialCategory": "Professional certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Oracle"
+          },
+          "dateCreated": "2025-10-13"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Oracle Cloud Infrastructure 2025 Certified Application Integration Professional",
+          "credentialCategory": "Professional certification",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Oracle"
+          },
+          "dateCreated": "2025-10-23"
+        }
+      ],
+      "award": "Golden Employee Award, SkyNetClouds annual meet, Bangkok, December 2024"
+    }
+  }
+  </script>
+  <script>
+    (function () {
+      var path = location.pathname.replace(/index\.html$/i, "");
+      if (path.slice(-1) !== "/") path += "/";
+      var site = location.origin + path;
+      var image = site + "assets/kavya.jpg";
+      var canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      canonical.href = site;
+      document.head.appendChild(canonical);
+      var pageUrl = document.createElement("meta");
+      pageUrl.setAttribute("property", "og:url");
+      pageUrl.content = site;
+      document.head.appendChild(pageUrl);
+      document.querySelector('meta[property="og:image"]').content = image;
+      document.querySelector('meta[name="twitter:image"]').content = image;
+      var data = document.getElementById("profile-data");
+      if (!data) return;
+      var profile = JSON.parse(data.textContent);
+      profile.url = site;
+      profile.mainEntity.url = site;
+      data.textContent = JSON.stringify(profile);
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to content</a>
+  <canvas id="particles" class="particle-field" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="when-closed">Menu</span>
+          <span class="when-open">Close</span>
+        </button>
+        <div class="nav-links" id="nav-menu">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#recognition">Recognition</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="identity">
+          <div class="avatar-wrap">
+            <span class="portrait-ring" aria-hidden="true"></span>
+            <img class="avatar" src="assets/kavya.jpg" alt="Kavya P, full stack developer based in Dubai" width="116" height="116">
+          </div>
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Full stack developer · Dubai</p>
+        </div>
+        <h1>Hi, I'm <span class="accent">Kavya P</span>.</h1>
+        <p class="lede">I build web products from the interface through to deployment.</p>
+        <p class="deck">Full stack developer with 3+ years shipping MERN applications, real estate platforms, cloud integrations, and workflow automation for international teams.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/918606932231?text=Hi%20Kavya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.2A8.8 8.8 0 0 0 4.7 16.6L3.4 20.6l4.1-1.3A8.8 8.8 0 1 0 12 3.2zm-2.2 4.9c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.2.2 1.8 2.8 4.4 3.8 2.1.8 2.6.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3l-1.5-.7c-.2-.1-.4 0-.6.2l-.6.7c-.1.2-.3.2-.5.1-1-.4-1.8-1.1-2.4-1.8-.4-.5-.8-1.1-.6-1.5l.5-.6c.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.6-.4z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/kavya-p-442091219" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.75"/><circle cx="8" cy="9" r="0.9" fill="currentColor"/><path d="M8 11.5V17M12 17v-3.4a1.8 1.8 0 0 1 3.6 0V17" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn btn-ghost" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kavyapmmb1@gmail.com&amp;su=Hello%20from%20your%20portfolio&amp;body=Hi%20Kavya%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="M4 7.5 12 13l8-5.5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>
+            Email me
+          </a>
+        </div>
+        <p class="cv-link"><a href="assets/Kavya-P-Resume.pdf" download="Kavya-P-Resume.pdf">Download CV</a></p>
+        <ul class="tech-row" aria-label="Core technologies">
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>MongoDB</li>
+          <li>AWS</li>
+          <li>n8n</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band" id="about">
+      <div class="wrap">
+        <article class="about-story">
+          <p class="section-label"><span>01</span> About</p>
+          <h2>I like software that stays clear when the work gets complicated.</h2>
+          <div class="about-copy">
+            <p>I design and ship web applications with MongoDB, Express, React, and Node, and I stay with the work from the interface through to deployment. That has meant SaaS products, real estate platforms, secure APIs, and the automation that keeps operations moving.</p>
+            <p>I started at Futura Labs in Calicut as an intern in January 2022. Four months later the company hired me as a MERN stack developer, and I spent the following year building with that team. Since April 2023 I have worked remotely with SkyNetClouds in Bangkok.</p>
+          </div>
+          <ul class="about-meta">
+            <li><span>Based in</span> Al Mankhool, Dubai</li>
+            <li><span>Languages</span> English, Malayalam</li>
+              <li><span>Role</span> Software Engineer</li>
+          </ul>
+        </article>
+        <div class="stats" aria-label="Highlights">
+          <article>
+            <strong>3+</strong>
+            <span>Years building software</span>
+          </article>
+          <article>
+            <strong>9+</strong>
+            <span>Projects</span>
+          </article>
+          <article>
+            <strong>5+</strong>
+            <span>Certifications</span>
+          </article>
+          <a class="stat-link" href="https://www.linkedin.com/in/kavya-p-442091219" target="_blank" rel="noopener noreferrer">
+            <strong>1000+</strong>
+            <span>LinkedIn followers</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap section" id="experience">
+      <div class="section-head">
+        <p class="section-label"><span>02</span> Experience</p>
+        <h2>Where I have worked</h2>
+        <p>Three roles, including the internship that led to my first full-time MERN position.</p>
+      </div>
+
+      <div class="timeline">
+        <svg class="timeline-svg" aria-hidden="true"></svg>
+        <ol class="jobs">
+        <li class="job">
+          <span class="job-node" aria-hidden="true"></span>
+          <div class="job-meta">
+            <p class="job-date">Apr 2023 – Present</p>
+            <p class="job-mode">Remote</p>
+          </div>
+          <div>
+            <h3>Software Engineer</h3>
+            <p class="org">SkyNetClouds Co., Ltd. · Bangkok, Thailand</p>
+            <ul>
+              <li>Build full stack applications with React.js, Node.js, Express.js, MongoDB, and MySQL.</li>
+              <li>Deliver secure REST APIs and responsive interfaces for enterprise platforms.</li>
+              <li>Automate build, test, and deployment with GitHub Actions.</li>
+              <li>Use n8n to cut manual operational work by about 40%, and connect AWS and Oracle Cloud for reporting and cost monitoring.</li>
+              <li>Collaborate with design, QA, and stakeholders in Agile teams.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job">
+          <span class="job-node" aria-hidden="true"></span>
+          <div class="job-meta">
+            <p class="job-date">May 2022 – Apr 2023</p>
+            <p class="job-mode">On-site · 1 year</p>
+          </div>
+          <div>
+            <h3>MERN Stack Developer</h3>
+            <p class="org">Futura Labs · Calicut, Kerala, India</p>
+            <ul>
+              <li>Built web applications with React.js, Express.js, Node.js, and MongoDB.</li>
+              <li>Developed REST APIs and the responsive screens connected to them.</li>
+              <li>Joined full-time after the internship and spent the year shipping features with the Calicut team.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job">
+          <span class="job-node" aria-hidden="true"></span>
+          <div class="job-meta">
+            <p class="job-date">Jan 2022 – Apr 2022</p>
+            <p class="job-mode">Internship · 4 months</p>
+          </div>
+          <div>
+            <h3>MERN Stack Intern</h3>
+            <p class="org">Futura Labs · Calicut, Kerala, India</p>
+            <ul>
+              <li>Completed a four-month internship immediately before being hired at the same company.</li>
+              <li>Supported the engineering team on MERN development tasks.</li>
+              <li>Built a working base in React.js, Express.js, Node.js, and MongoDB that led to the full-time role.</li>
+            </ul>
+          </div>
+        </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="wrap section" id="skills">
+      <div class="section-head">
+        <p class="section-label"><span>03</span> Skills</p>
+        <h2>Technologies I work with</h2>
+        <p>The tools I ship with, grouped by the kind of work.</p>
+      </div>
+      <ul class="tech-tiles" aria-label="Technology symbols">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#61DAFB" d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/></svg>
+            <span>React</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#F7DF1E" d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+            <span>JavaScript</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#5FA04E" d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/></svg>
+            <span>Node.js</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FFFFFF" d="M12.262 16.666h1.146l6.975-9.325H19.22zm9.778 1.441v.004l-4.334-5.706-.557.74 4.873 6.682H.945V4.173h9.505l5.026 6.7.574-.772-4.374-5.928h.003l-.719-.945H0v17.544h24zM10.917 8.705a3.8 3.8 0 0 0-1.292-1.183q-.796-.45-1.916-.45c-.746 0-1.37.14-1.906.424a3.76 3.76 0 0 0-1.31 1.12 4.9 4.9 0 0 0-.75 1.581 7.17 7.17 0 0 0 0 3.696c.148.567.402 1.101.75 1.573a3.5 3.5 0 0 0 1.31 1.066q.803.39 1.906.389 1.77 0 2.739-.868.966-.867 1.328-2.457h-1.139q-.271 1.084-.977 1.734-.704.651-1.952.65-.812 0-1.392-.342a3.1 3.1 0 0 1-.957-.869 3.5 3.5 0 0 1-.551-1.182 5 5 0 0 1-.17-1.133 9 9 0 0 0-.015-.286 4.5 4.5 0 0 1 .015-.829c.047-.418.147-.83.296-1.223A3.7 3.7 0 0 1 5.54 9.05a2.9 2.9 0 0 1 .922-.742q.541-.28 1.246-.28c.47 0 .869.093 1.23.28q.541.281.922.742.379.461.587 1.057t.225 1.246H5.625l.004.957h6.182a7.3 7.3 0 0 0-.18-1.924 4.9 4.9 0 0 0-.715-1.68z"/></svg>
+            <span>Express</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#47A248" d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0 1 11.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 0 0 3.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></svg>
+            <span>MongoDB</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4479A1" d="M16.405 5.501c-.115 0-.193.014-.274.033v.013h.014c.054.104.146.18.214.273.054.107.1.214.154.32l.014-.015c.094-.066.14-.172.14-.333-.04-.047-.046-.094-.08-.14-.04-.067-.126-.1-.18-.153zM5.77 18.695h-.927a50.854 50.854 0 0 0-.27-4.41h-.008l-1.41 4.41H2.45l-1.4-4.41h-.01a72.892 72.892 0 0 0-.195 4.41H0c.055-1.966.192-3.81.41-5.53h1.15l1.335 4.064h.008l1.347-4.064h1.095c.242 2.015.384 3.86.428 5.53zm4.017-4.08c-.378 2.045-.876 3.533-1.492 4.46-.482.716-1.01 1.073-1.583 1.073-.153 0-.34-.046-.566-.138v-.494c.11.017.24.026.386.026.268 0 .483-.075.647-.222.197-.18.295-.382.295-.605 0-.155-.077-.47-.23-.944L6.23 14.615h.91l.727 2.36c.164.536.233.91.205 1.123.4-1.064.678-2.227.835-3.483zm12.325 4.08h-2.63v-5.53h.885v4.85h1.745zm-3.32.135-1.016-.5c.09-.076.177-.158.255-.25.433-.506.648-1.258.648-2.253 0-1.83-.718-2.746-2.155-2.746-.704 0-1.254.232-1.65.697-.43.508-.646 1.256-.646 2.245 0 .972.19 1.686.574 2.14.35.41.877.615 1.583.615.264 0 .506-.033.725-.098l1.325.772.36-.622zM15.5 17.588c-.225-.36-.337-.94-.337-1.736 0-1.393.424-2.09 1.27-2.09.443 0 .77.167.977.5.224.362.336.936.336 1.723 0 1.404-.424 2.108-1.27 2.108-.445 0-.77-.167-.978-.5zm-1.658-.425c0 .47-.172.856-.516 1.156-.344.3-.803.45-1.384.45-.543 0-1.064-.172-1.573-.515l.237-.476c.438.22.833.328 1.19.328.332 0 .593-.073.783-.22a.754.754 0 0 0 .3-.615c0-.33-.23-.61-.648-.845-.388-.213-1.163-.657-1.163-.657-.422-.307-.632-.636-.632-1.177 0-.45.157-.81.47-1.085.315-.278.72-.415 1.22-.415.512 0 .98.136 1.4.41l-.213.476a2.726 2.726 0 0 0-1.064-.23c-.283 0-.502.068-.654.206a.685.685 0 0 0-.248.524c0 .328.234.61.666.85.393.215 1.187.67 1.187.67.433.305.648.63.648 1.168zm9.382-5.852c-.535-.014-.95.04-1.297.188-.1.04-.26.04-.274.167.055.053.063.14.11.214.08.134.218.313.346.407.14.11.28.216.427.31.26.16.555.255.81.416.145.094.293.213.44.313.073.05.12.14.214.172v-.02c-.046-.06-.06-.147-.105-.214-.067-.067-.134-.127-.2-.193a3.223 3.223 0 0 0-.695-.675c-.214-.146-.682-.35-.77-.595l-.013-.014c.146-.013.32-.066.46-.106.227-.06.435-.047.67-.106.106-.027.213-.06.32-.094v-.06c-.12-.12-.21-.283-.334-.395a8.867 8.867 0 0 0-1.104-.823c-.21-.134-.476-.22-.697-.334-.08-.04-.214-.06-.26-.127-.12-.146-.19-.34-.275-.514a17.69 17.69 0 0 1-.547-1.163c-.12-.262-.193-.523-.34-.763-.69-1.137-1.437-1.826-2.586-2.5-.247-.14-.543-.2-.856-.274-.167-.008-.334-.02-.5-.027-.11-.047-.216-.174-.31-.235-.38-.24-1.364-.76-1.644-.072-.18.434.267.862.422 1.082.115.153.26.328.34.5.047.116.06.235.107.356.106.294.207.622.347.897.073.14.153.287.247.413.054.073.146.107.167.227-.094.136-.1.334-.154.5-.24.757-.146 1.693.194 2.25.107.166.362.534.703.393.3-.12.234-.5.32-.835.02-.08.007-.133.048-.187v.015c.094.188.188.367.274.555.206.328.566.668.867.895.16.12.287.328.487.402v-.02h-.015c-.043-.058-.1-.086-.154-.133a3.445 3.445 0 0 1-.35-.4 8.76 8.76 0 0 1-.747-1.218c-.11-.21-.202-.436-.29-.643-.04-.08-.04-.2-.107-.24-.1.146-.247.273-.32.453-.127.288-.14.642-.188 1.01-.027.007-.014 0-.027.014-.214-.052-.287-.274-.367-.46-.2-.475-.233-1.238-.06-1.785.047-.14.247-.582.167-.716-.042-.127-.174-.2-.247-.303a2.478 2.478 0 0 1-.24-.427c-.16-.374-.24-.788-.414-1.162-.08-.173-.22-.354-.334-.513-.127-.18-.267-.307-.368-.52-.033-.073-.08-.194-.027-.274.014-.054.042-.075.094-.09.088-.072.335.022.422.062.247.1.455.194.662.334.094.066.195.193.315.226h.14c.214.047.455.014.655.073.355.114.675.28.962.46a5.953 5.953 0 0 1 2.085 2.286c.08.154.115.295.188.455.14.33.313.663.455.982.14.315.275.636.476.897.1.14.502.213.682.286.133.06.34.115.46.188.23.14.454.3.67.454.11.076.443.243.463.378z"/></svg>
+            <span>MySQL</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#E34F26" d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+            <span>HTML5</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#663399" d="M0 0v20.16A3.84 3.84 0 0 0 3.84 24h16.32A3.84 3.84 0 0 0 24 20.16V3.84A3.84 3.84 0 0 0 20.16 0Zm14.256 13.08c1.56 0 2.28 1.08 2.304 2.64h-1.608c.024-.288-.048-.6-.144-.84-.096-.192-.288-.264-.552-.264-.456 0-.696.264-.696.84-.024.576.288.888.768 1.08.72.288 1.608.744 1.92 1.296q.432.648.432 1.656c0 1.608-.912 2.592-2.496 2.592-1.656 0-2.4-1.032-2.424-2.688h1.68c0 .792.264 1.176.792 1.176.264 0 .456-.072.552-.24.192-.312.24-1.176-.048-1.512-.312-.408-.912-.6-1.32-.816q-.828-.396-1.224-.936c-.24-.36-.36-.888-.36-1.536 0-1.44.936-2.472 2.424-2.448m5.4 0c1.584 0 2.304 1.08 2.328 2.64h-1.608c0-.288-.048-.6-.168-.84-.096-.192-.264-.264-.528-.264-.48 0-.72.264-.72.84s.288.888.792 1.08c.696.288 1.608.744 1.92 1.296.264.432.408.984.408 1.656.024 1.608-.888 2.592-2.472 2.592-1.68 0-2.424-1.056-2.448-2.688h1.68c0 .744.264 1.176.792 1.176.264 0 .456-.072.552-.24.216-.312.264-1.176-.048-1.512-.288-.408-.888-.6-1.32-.816-.552-.264-.96-.576-1.2-.936s-.36-.888-.36-1.536c-.024-1.44.912-2.472 2.4-2.448m-11.031.018c.711-.006 1.419.198 1.839.63.432.432.672 1.128.648 1.992H9.336c.024-.456-.096-.792-.432-.96-.312-.144-.768-.048-.888.24-.12.264-.192.576-.168.864v3.504c0 .744.264 1.128.768 1.128a.65.65 0 0 0 .552-.264c.168-.24.192-.552.168-.84h1.776c.096 1.632-.984 2.712-2.568 2.688-1.536 0-2.496-.864-2.472-2.472v-4.032c0-.816.24-1.44.696-1.848.432-.408 1.146-.624 1.857-.63"/></svg>
+            <span>CSS3</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF9900" d="M6.763 10.036c0 .296.032.535.088.71.064.176.144.368.256.576.04.063.056.127.056.183 0 .08-.048.16-.152.24l-.503.335a.383.383 0 0 1-.208.072c-.08 0-.16-.04-.239-.112a2.47 2.47 0 0 1-.287-.375 6.18 6.18 0 0 1-.248-.471c-.622.734-1.405 1.101-2.347 1.101-.67 0-1.205-.191-1.596-.574-.391-.384-.59-.894-.59-1.533 0-.678.239-1.23.726-1.644.487-.415 1.133-.623 1.955-.623.272 0 .551.024.846.064.296.04.6.104.918.176v-.583c0-.607-.127-1.03-.375-1.277-.255-.248-.686-.367-1.3-.367-.28 0-.568.031-.863.103-.295.072-.583.16-.862.272a2.287 2.287 0 0 1-.28.104.488.488 0 0 1-.127.023c-.112 0-.168-.08-.168-.247v-.391c0-.128.016-.224.056-.28a.597.597 0 0 1 .224-.167c.279-.144.614-.264 1.005-.36a4.84 4.84 0 0 1 1.246-.151c.95 0 1.644.216 2.091.647.439.43.662 1.085.662 1.963v2.586zm-3.24 1.214c.263 0 .534-.048.822-.144.287-.096.543-.271.758-.51.128-.152.224-.32.272-.512.047-.191.08-.423.08-.694v-.335a6.66 6.66 0 0 0-.735-.136 6.02 6.02 0 0 0-.75-.048c-.535 0-.926.104-1.19.32-.263.215-.39.518-.39.917 0 .375.095.655.295.846.191.2.47.296.838.296zm6.41.862c-.144 0-.24-.024-.304-.08-.064-.048-.12-.16-.168-.311L7.586 5.55a1.398 1.398 0 0 1-.072-.32c0-.128.064-.2.191-.2h.783c.151 0 .255.025.31.08.065.048.113.16.16.312l1.342 5.284 1.245-5.284c.04-.16.088-.264.151-.312a.549.549 0 0 1 .32-.08h.638c.152 0 .256.025.32.08.063.048.12.16.151.312l1.261 5.348 1.381-5.348c.048-.16.104-.264.16-.312a.52.52 0 0 1 .311-.08h.743c.127 0 .2.065.2.2 0 .04-.009.08-.017.128a1.137 1.137 0 0 1-.056.2l-1.923 6.17c-.048.16-.104.263-.168.311a.51.51 0 0 1-.303.08h-.687c-.151 0-.255-.024-.32-.08-.063-.056-.119-.16-.15-.32l-1.238-5.148-1.23 5.14c-.04.16-.087.264-.15.32-.065.056-.177.08-.32.08zm10.256.215c-.415 0-.83-.048-1.229-.143-.399-.096-.71-.2-.918-.32-.128-.071-.215-.151-.247-.223a.563.563 0 0 1-.048-.224v-.407c0-.167.064-.247.183-.247.048 0 .096.008.144.024.048.016.12.048.2.08.271.12.566.215.878.279.319.064.63.096.95.096.502 0 .894-.088 1.165-.264a.86.86 0 0 0 .415-.758.777.777 0 0 0-.215-.559c-.144-.151-.416-.287-.807-.415l-1.157-.36c-.583-.183-1.014-.454-1.277-.813a1.902 1.902 0 0 1-.4-1.158c0-.335.073-.63.216-.886.144-.255.335-.479.575-.654.24-.184.51-.32.83-.415.32-.096.655-.136 1.006-.136.175 0 .359.008.535.032.183.024.35.056.518.088.16.04.312.08.455.127.144.048.256.096.336.144a.69.69 0 0 1 .24.2.43.43 0 0 1 .071.263v.375c0 .168-.064.256-.184.256a.83.83 0 0 1-.303-.096 3.652 3.652 0 0 0-1.532-.311c-.455 0-.815.071-1.062.223-.248.152-.375.383-.375.71 0 .224.08.416.24.567.159.152.454.304.877.44l1.134.358c.574.184.99.44 1.237.767.247.327.367.702.367 1.117 0 .343-.072.655-.207.926-.144.272-.336.511-.583.703-.248.2-.543.343-.886.447-.36.111-.734.167-1.142.167zM21.698 16.207c-2.626 1.94-6.442 2.969-9.722 2.969-4.598 0-8.74-1.7-11.87-4.526-.247-.223-.024-.527.272-.351 3.384 1.963 7.559 3.153 11.877 3.153 2.914 0 6.114-.607 9.06-1.852.439-.2.814.287.383.607zM22.792 14.961c-.336-.43-2.22-.207-3.074-.103-.255.032-.295-.192-.063-.36 1.5-1.053 3.967-.75 4.254-.399.287.36-.08 2.826-1.485 4.007-.215.184-.423.088-.327-.151.32-.79 1.03-2.57.695-2.994z"/></svg>
+            <span>AWS</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#F03C2E" d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"/></svg>
+            <span>Git</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#EA4B71" d="M21.4737 5.6842c-1.1772 0-2.1663.8051-2.4468 1.8947h-2.8955c-1.235 0-2.289.893-2.492 2.111l-.1038.623a1.263 1.263 0 0 1-1.246 1.0555H11.289c-.2805-1.0896-1.2696-1.8947-2.4468-1.8947s-2.1663.8051-2.4467 1.8947H4.973c-.2805-1.0896-1.2696-1.8947-2.4468-1.8947C1.1311 9.4737 0 10.6047 0 12s1.131 2.5263 2.5263 2.5263c1.1772 0 2.1663-.8051 2.4468-1.8947h1.4223c.2804 1.0896 1.2696 1.8947 2.4467 1.8947 1.1772 0 2.1663-.8051 2.4468-1.8947h1.0008a1.263 1.263 0 0 1 1.2459 1.0555l.1038.623c.203 1.218 1.257 2.111 2.492 2.111h.3692c.2804 1.0895 1.2696 1.8947 2.4468 1.8947 1.3952 0 2.5263-1.131 2.5263-2.5263s-1.131-2.5263-2.5263-2.5263c-1.1772 0-2.1664.805-2.4468 1.8947h-.3692a1.263 1.263 0 0 1-1.246-1.0555l-.1037-.623A2.52 2.52 0 0 0 13.9607 12a2.52 2.52 0 0 0 .821-1.4794l.1038-.623a1.263 1.263 0 0 1 1.2459-1.0555h2.8955c.2805 1.0896 1.2696 1.8947 2.4468 1.8947 1.3952 0 2.5263-1.131 2.5263-2.5263s-1.131-2.5263-2.5263-2.5263m0 1.2632a1.263 1.263 0 0 1 1.2631 1.2631 1.263 1.263 0 0 1-1.2631 1.2632 1.263 1.263 0 0 1-1.2632-1.2632 1.263 1.263 0 0 1 1.2632-1.2631M2.5263 10.7368A1.263 1.263 0 0 1 3.7895 12a1.263 1.263 0 0 1-1.2632 1.2632A1.263 1.263 0 0 1 1.2632 12a1.263 1.263 0 0 1 1.2631-1.2632m6.3158 0A1.263 1.263 0 0 1 10.1053 12a1.263 1.263 0 0 1-1.2632 1.2632A1.263 1.263 0 0 1 7.579 12a1.263 1.263 0 0 1 1.2632-1.2632m10.1053 3.7895a1.263 1.263 0 0 1 1.2631 1.2632 1.263 1.263 0 0 1-1.2631 1.2631 1.263 1.263 0 0 1-1.2632-1.2631 1.263 1.263 0 0 1 1.2632-1.2632"/></svg>
+            <span>n8n</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#C74634" d="M16.412 4.412h-8.82a7.588 7.588 0 0 0-.008 15.176h8.828a7.588 7.588 0 0 0 0-15.176zm-.193 12.502H7.786a4.915 4.915 0 0 1 0-9.828h8.433a4.914 4.914 0 0 1 0 9.828z"/></svg>
+            <span>Oracle</span>
+          </li>
+        </ul>
+      <div class="skill-stage">
+        <svg class="skill-svg" aria-hidden="true"></svg>
+        <div class="skill-grid">
+        <article>
+          <span class="skill-node" aria-hidden="true"></span>
+          <h3>Frontend</h3>
+          <ul>
+            <li>React.js</li>
+            <li>JavaScript (ES6+)</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>Responsive design</li>
+          </ul>
+        </article>
+        <article>
+          <span class="skill-node" aria-hidden="true"></span>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>REST APIs</li>
+          </ul>
+        </article>
+        <article>
+          <span class="skill-node" aria-hidden="true"></span>
+          <h3>Databases</h3>
+          <ul>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+          </ul>
+        </article>
+        <article>
+          <span class="skill-node" aria-hidden="true"></span>
+          <h3>Cloud &amp; DevOps</h3>
+          <ul>
+            <li>AWS</li>
+            <li>Oracle Cloud</li>
+            <li>GitHub Actions</li>
+            <li>CI/CD</li>
+            <li>Git</li>
+          </ul>
+        </article>
+        <article>
+          <span class="skill-node" aria-hidden="true"></span>
+          <h3>Automation</h3>
+          <ul>
+            <li>n8n</li>
+            <li>Webhooks</li>
+            <li>Retell AI</li>
+            <li>Follow Up Boss</li>
+            <li>GoHighLevel</li>
+          </ul>
+        </article>
+        <article>
+          <span class="skill-node" aria-hidden="true"></span>
+          <h3>Quality</h3>
+          <ul>
+            <li>Mocha</li>
+            <li>ESLint</li>
+            <li>Unit testing</li>
+            <li>Code review</li>
+            <li>Agile &amp; Scrum</li>
+          </ul>
+        </article>
+        </div>
+      </div>
+      <p class="assist-note">Familiar with Cursor, Claude, GitHub Copilot, ChatGPT, and Gemini.</p>
+    </section>
+
+    <section class="wrap section" id="projects">
+      <div class="section-head">
+        <p class="section-label"><span>04</span> Projects</p>
+        <h2>Selected work</h2>
+        <p>Real estate products, cloud and clinic platforms, workplace tools, and delivery automation.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project">
+          <p class="project-index">01</p>
+          <h3>AgentShades</h3>
+          <p>A website builder for real estate professionals. Agents launch branded marketing sites from reusable templates and straightforward design tools.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>MERN</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+          </ul>
+        </article>
+        <article class="project">
+          <p class="project-index">02</p>
+          <h3>BuilderMatch</h3>
+          <p>A marketplace that connects Canadian homeowners with construction and home-improvement providers.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>MERN</li>
+            <li>REST APIs</li>
+            <li>MongoDB</li>
+          </ul>
+        </article>
+        <article class="project">
+          <p class="project-index">03</p>
+          <h3>BlueBrick Global</h3>
+          <p>A real estate platform with automated marketing, lead generation, and CRM integration for customer acquisition.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>MERN</li>
+            <li>CRM</li>
+            <li>Automation</li>
+          </ul>
+        </article>
+        <article class="project">
+          <p class="project-index">04</p>
+          <h3>RedBuyers</h3>
+          <p>An iBuying platform for the Canadian market. Homeowners request instant cash offers through a guided digital workflow.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>Web app</li>
+            <li>Workflows</li>
+            <li>Real estate</li>
+          </ul>
+        </article>
+        <article class="project">
+          <p class="project-index">05</p>
+          <h3>Enterprise CI/CD</h3>
+          <p>GitHub Actions pipelines for several production applications, with testing included in the release path so deploys stay reliable.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>GitHub Actions</li>
+            <li>CI/CD</li>
+            <li>Testing</li>
+          </ul>
+        </article>
+        <article class="project">
+          <p class="project-index">06</p>
+          <h3>AI CRM automation</h3>
+          <p>An automation platform using n8n, Retell AI, Follow Up Boss, GoHighLevel, and webhooks for lead capture, AI voice, scheduling, CRM sync, and internal alerts.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>n8n</li>
+            <li>Webhooks</li>
+            <li>AI voice</li>
+          </ul>
+        </article>
+        <article class="project">
+          <p class="project-index">07</p>
+          <h3>CloudKit</h3>
+          <p>A desktop app for multi-cloud management. It brings accounts, subscriptions, and regions across AWS, Oracle Cloud, Azure, Google Cloud, and Alibaba Cloud into one place, including virtual machines, monitoring, and scheduled automation. Credentials stay in local config files.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>Electron.js</li>
+            <li>AWS</li>
+            <li>Multi-cloud</li>
+          </ul>
+        </article>
+        <article class="project">
+          <p class="project-index">08</p>
+          <h3>Clinical ERP</h3>
+          <p>A clinic operations platform for individual practitioners and multi-doctor clinics. It covers patient records, appointments, and billing, from proposal and design through to delivery.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>Clinic ops</li>
+            <li>Appointments</li>
+            <li>Billing</li>
+          </ul>
+        </article>
+        <article class="project">
+          <p class="project-index">09</p>
+          <h3>Officebotz</h3>
+          <p>A workforce platform for software companies and small businesses. It handles attendance, project time tracking, task allocation, working-hour reports, leave applications, and holidays.</p>
+          <ul class="tags" aria-label="Stack">
+            <li>Node.js</li>
+            <li>Attendance</li>
+            <li>Database design</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="education">
+      <div class="section-head">
+        <p class="section-label"><span>05</span> Education</p>
+        <h2>Kannur University</h2>
+        <p>Rank holder in both degrees, with grade A in each.</p>
+      </div>
+      <div class="edu-grid">
+        <article class="edu-card">
+          <p class="score">88.48%</p>
+          <h3>Master of Science, Computer Science</h3>
+          <p>Kannur University · Jul 2019 – Aug 2021</p>
+          <p class="grade">Grade A · University rank holder</p>
+        </article>
+        <article class="edu-card">
+          <p class="score">85.72%</p>
+          <h3>Bachelor of Computer Applications</h3>
+          <p>Kannur University · Jul 2016 – May 2019</p>
+          <p class="grade">Grade A · University rank holder</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="recognition">
+      <div class="section-head">
+        <p class="section-label"><span>06</span> Recognition</p>
+        <h2>Certificates and awards</h2>
+        <p>Oracle Cloud certifications, and the Golden Employee Award from the 2024 annual meet in Bangkok.</p>
+      </div>
+      <div class="award-grid">
+        <article class="award-card">
+          <p class="award-kicker">Oracle Certified Professional</p>
+          <h3>OCI 2025 Observability Professional</h3>
+          <p>Oracle Cloud Infrastructure 2025 Certified Observability Professional.</p>
+          <p class="grade">October 2025</p>
+        </article>
+        <article class="award-card">
+          <p class="award-kicker">Oracle Certified Professional</p>
+          <h3>OCI 2025 Application Integration Professional</h3>
+          <p>Oracle Cloud Infrastructure 2025 Certified Application Integration Professional.</p>
+          <p class="grade">October 2025</p>
+        </article>
+        <article class="award-card">
+          <p class="award-kicker">SkyNetClouds</p>
+          <h3>Golden Employee Award</h3>
+          <p>Recognized at the 2024 annual meet in Bangkok.</p>
+          <p class="grade">December 2024</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section" id="contact">
+      <div class="contact-panel">
+        <p class="section-label"><span>07</span> Contact</p>
+        <h2>Building something new?<br><span class="accent">Let's talk.</span></h2>
+        <p>I reply fastest on WhatsApp. Email and LinkedIn are here too.</p>
+        <div class="cta-row">
+          <a class="btn btn-whatsapp" href="https://wa.me/918606932231?text=Hi%20Kavya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.2A8.8 8.8 0 0 0 4.7 16.6L3.4 20.6l4.1-1.3A8.8 8.8 0 1 0 12 3.2zm-2.2 4.9c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.2.2 1.8 2.8 4.4 3.8 2.1.8 2.6.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3l-1.5-.7c-.2-.1-.4 0-.6.2l-.6.7c-.1.2-.3.2-.5.1-1-.4-1.8-1.1-2.4-1.8-.4-.5-.8-1.1-.6-1.5l.5-.6c.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.6-.4z"/></svg>
+            Chat on WhatsApp
+          </a>
+          <a class="btn btn-primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kavyapmmb1@gmail.com&amp;su=Hello%20from%20your%20portfolio&amp;body=Hi%20Kavya%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.75"/><path d="M4 7.5 12 13l8-5.5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/></svg>
+            kavyapmmb1@gmail.com
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/kavya-p-442091219" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="1.75"/><circle cx="8" cy="9" r="0.9" fill="currentColor"/><path d="M8 11.5V17M12 17v-3.4a1.8 1.8 0 0 1 3.6 0V17" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg>
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p><strong>Kavya P</strong> · Full Stack Developer · Dubai</p>
+      <p class="footer-links">
+        <a href="https://wa.me/918606932231?text=Hi%20Kavya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kavyapmmb1@gmail.com&amp;su=Hello%20from%20your%20portfolio&amp;body=Hi%20Kavya%2C%0A%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer">Gmail</a>
+        <a href="https://www.linkedin.com/in/kavya-p-442091219" target="_blank" rel="me noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/KavyaPMMB" target="_blank" rel="me noopener noreferrer">GitHub</a>
+      </p>
+      <p>© 2026 Kavya P</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/918606932231?text=Hi%20Kavya%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3.2A8.8 8.8 0 0 0 4.7 16.6L3.4 20.6l4.1-1.3A8.8 8.8 0 1 0 12 3.2zm0 1.6a7.2 7.2 0 0 1 6.2 10.9 7.2 7.2 0 0 1-9.4 2.6l-.3-.2-2.4.8.8-2.3-.2-.3A7.2 7.2 0 0 1 12 4.8zm-2.2 3.4c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.2.2 1.8 2.8 4.4 3.8 2.1.8 2.6.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1.1.1-1.2-.1-.1-.3-.2-.6-.3l-1.5-.7c-.2-.1-.4 0-.6.2l-.6.7c-.1.2-.3.2-.5.1-1-.4-1.8-1.1-2.4-1.8-.4-.5-.8-1.1-.6-1.5l.5-.6c.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.6-.4z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
