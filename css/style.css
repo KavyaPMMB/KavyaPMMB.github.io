@@ -224,52 +224,73 @@ p {
 }
 
 .scroll-cue {
-  align-self: flex-start;
+  align-self: center;
   position: sticky;
   bottom: 22px;
   z-index: 5;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   width: fit-content;
   margin-top: auto;
   padding-top: 28px;
   color: var(--muted);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
   text-decoration: none;
 }
 
-.scroll-cue:hover {
+.scroll-cue:hover,
+.scroll-cue:focus {
   color: var(--text);
+  text-decoration: none;
 }
 
-.scroll-mouse {
+.scroll-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+.scroll-motion {
+  display: grid;
+  place-items: center;
+  animation: cue-bob 1.6s ease-in-out infinite;
+}
+
+.scroll-track {
   position: relative;
-  width: 22px;
-  height: 34px;
-  border: 1.5px solid rgba(232, 238, 248, 0.5);
-  border-radius: 12px;
+  width: 20px;
+  height: 42px;
+  border: 1.5px solid rgba(196, 184, 255, 0.45);
+  border-radius: 999px;
+  overflow: hidden;
 }
 
-.scroll-mouse span {
+.scroll-track span {
   position: absolute;
-  top: 6px;
   left: 50%;
-  width: 3px;
-  height: 7px;
-  margin-left: -1.5px;
-  border-radius: 3px;
-  background: var(--accent);
-  animation: wheel 1.5s ease-in-out infinite;
+  top: 5px;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  border-radius: 50%;
+  background: #d7ccff;
+  box-shadow: 0 0 10px rgba(141, 124, 255, 0.9);
+  animation: scroll-fall 1.35s cubic-bezier(0.45, 0, 0.25, 1) infinite;
 }
 
-@keyframes wheel {
-  0% { transform: translateY(0); opacity: 1; }
-  70% { transform: translateY(11px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 0; }
+@keyframes scroll-fall {
+  0% { transform: translateY(0); opacity: 0; }
+  18% { opacity: 1; }
+  78% { transform: translateY(22px); opacity: 1; }
+  100% { transform: translateY(26px); opacity: 0; }
+}
+
+@keyframes cue-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
 }
 
 .hero-copy > *:not(.scroll-cue) {
@@ -1190,7 +1211,8 @@ section[id] {
   .hero-copy > *,
   .portrait-ring,
   .dot,
-  .scroll-mouse span,
+  .scroll-motion,
+  .scroll-track span,
   .tech-tiles li {
     animation: none;
   }

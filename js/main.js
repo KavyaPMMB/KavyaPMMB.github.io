@@ -16,6 +16,20 @@ function onScroll() {
     const fade = Math.min(1, Math.max(0, room / 180));
     scrollCue.style.opacity = String(fade);
     scrollCue.style.pointerEvents = fade < 0.15 ? "none" : "";
+    const dot = scrollCue.querySelector(".scroll-track span");
+    if (dot && !reduceMotion) {
+      const distance = Math.max(window.innerHeight * 0.85, 1);
+      const progress = Math.min(1, window.scrollY / distance);
+      if (window.scrollY < 12) {
+        dot.style.animation = "";
+        dot.style.transform = "";
+        dot.style.opacity = "";
+      } else {
+        dot.style.animation = "none";
+        dot.style.opacity = "1";
+        dot.style.transform = `translateY(${Math.round(progress * 26)}px)`;
+      }
+    }
   }
 
   const marker = window.scrollY + 120;
